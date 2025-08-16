@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>All Properties - Modern Real Estate</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+   
+<!-- header section starts  -->
+
+<header class="header">
+
+   <nav class="navbar nav-1">
+      <section class="flex">
+         <a href="index.html" class="logo"><i class="fas fa-home"></i>Modern Real Estate</a>
+
+         <ul>
+            <li><a href="tel:+1234567890" class="contact-btn"><i class="fas fa-phone"></i>Call Now</a></li>
+         </ul>
+      </section>
+   </nav>
+
+   <nav class="navbar nav-2">
+      <section class="flex">
+         <div id="menu-btn" class="fas fa-bars"></div>
+
+         <div class="menu">
+            <ul>
+               <li><a href="listings.html">All Properties</a></li>
+               <li><a href="about.html">About Us</a></li>
+               <li><a href="contact.html">Contact</a></li>
+            </ul>
+         </div>
+
+         <ul>
+            <li><a href="#" class="search-btn"><i class="fas fa-search"></i>Search</a></li>
+            <li><a href="contact.html" class="contact-nav">Get Quote</a></li>
+         </ul>
+      </section>
+   </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- listings section starts  -->
+
+<section class="listings-page">
+   <h1 class="heading">All Properties</h1>
+
+   <div class="filters">
+      <h3>Filter Properties</h3>
+      <div class="flex">
+         <div class="box">
+            <input type="text" name="location" id="location-filter" placeholder="Enter location" class="input">
+         </div>
+         <div class="box">
+            <select name="type" id="type-filter" class="input">
+               <option value="">Property Type</option>
+               <option value="house">House</option>
+               <option value="apartment">Apartment</option>
+               <option value="commercial">Commercial</option>
+            </select>
+         </div>
+         <div class="box">
+            <select name="bhk" id="bhk-filter" class="input">
+               <option value="">Bedrooms</option>
+               <option value="1">1 Bedroom</option>
+               <option value="2">2 Bedrooms</option>
+               <option value="3">3 Bedrooms</option>
+               <option value="4">4+ Bedrooms</option>
+            </select>
+         </div>
+         <div class="box">
+            <select name="price_range" id="price-filter" class="input">
+               <option value="">Price Range</option>
+               <option value="0-2000000">Under ₹20 Lakhs</option>
+               <option value="2000000-5000000">₹20 Lakhs - ₹50 Lakhs</option>
+               <option value="5000000-10000000">₹50 Lakhs - ₹1 Crore</option>
+               <option value="10000000-20000000">₹1 Crore - ₹2 Crores</option>
+               <option value="20000000+">₹2 Crores+</option>
+            </select>
+         </div>
+         <div class="box">
+            <button type="button" onclick="filterProperties()" class="btn">Apply Filters</button>
+            <button type="button" onclick="clearFilters()" class="inline-btn">Clear</button>
+         </div>
+      </div>
+   </div>
+
+   <div class="box-container">
+      <div class="box" data-location="Bandra West, Mumbai" data-type="house" data-bhk="4" data-price="85000000">
+         <div class="admin">
+            <h3>M</h3>
+            <div>
+               <p>Modern Real Estate</p>
+               <span>Featured</span>
+            </div>
+         </div>
+         <div class="thumb">
+            <p class="total-images"><i class="far fa-image"></i><span>6</span></p>
+            <p class="type"><span>House</span><span>Sale</span></p>
+            <form action="" method="post" class="save">
+               <button type="submit" name="save" class="far fa-heart"></button>
+            </form>
+            <img src="images/house-img-1.webp" alt="Modern Family Home">
+         </div>
+         <h3 class="name">Modern Family Home</h3>
+         <p class="location"><i class="fas fa-map-marker-alt"></i><span>Bandra West, Mumbai</span></p>
+         <div class="flex">
+            <p><i class="fas fa-bed"></i><span>4</span></p>
+            <p><i class="fas fa-bath"></i><span>3</span></p>
+            <p><i class="fas fa-maximize"></i><span>2,200 sqft</span></p>
+         </div>
+         <div class="price">₹8.5 Crores</div>
+         <a href="view_property.html" class="btn">View Details</a>
+      </div>
+
+      <div class="box" data-location="Worli, Mumbai" data-type="apartment" data-bhk="2" data-price="32000000">
+         <div class="admin">
+            <h3>M</h3>
+            <div>
+               <p>Modern Real Estate</p>
+               <span>Featured</span>
+            </div>
+         </div>
+         <div class="thumb">
+            <p class="total-images"><i class="far fa-image"></i><span>8</span></p>
+            <p class="type"><span>Apartment</span><span>Sale</span></p>
+            <form action="" method="post" class="save">
+               <button type="submit" name="save" class="far fa-heart"></button>
+            </form>
+            <img src="images/house-img-2.webp" alt="Luxury Apartment">
+         </div>
+         <h3 class="name">Luxury Apartment</h3>
+         <p class="location"><i class="fas fa-map-marker-alt"></i><span>Worli, Mumbai</span></p>
+         <div class="flex">
+            <p><i class="fas fa-bed"></i><span>2</span></p>
+            <p><i class="fas fa-bath"></i><span>2</span></p>
+            <p><i class="fas fa-maximize"></i><span>1,100 sqft</span></p>
+         </div>
+         <div class="price">₹3.2 Crores</div>
+         <a href="view_property.html" class="btn">View Details</a>
+      </div>
+
+      <div class="box" data-location="Juhu, Mumbai" data-type="house" data-bhk="5" data-price="125000000">
+         <div class="admin">
+            <h3>M</h3>
+            <div>
+               <p>Modern Real Estate</p>
+               <span>Featured</span>
+            </div>
+         </div>
+         <div class="thumb">
+            <p class="total-images"><i class="far fa-image"></i><span>5</span></p>
+            <p class="type"><span>House</span><span>Sale</span></p>
+            <form action="" method="post" class="save">
+               <button type="submit" name="save" class="far fa-heart"></button>
+            </form>
+            <img src="images/house-img-3.jpg" alt="Spacious Family Home">
+         </div>
+         <h3 class="name">Spacious Family Home</h3>
+         <p class="location"><i class="fas fa-map-marker-alt"></i><span>Juhu, Mumbai</span></p>
+         <div class="flex">
+            <p><i class="fas fa-bed"></i><span>5</span></p>
+            <p><i class="fas fa-bath"></i><span>3</span></p>
+            <p><i class="fas fa-maximize"></i><span>3,200 sqft</span></p>
+         </div>
+         <div class="price">₹12.5 Crores</div>
+         <a href="view_property.html" class="btn">View Details</a>
+      </div>
+
+      <div class="box" data-location="Andheri West, Mumbai" data-type="apartment" data-bhk="3" data-price="28000000">
+         <div class="admin">
+            <h3>M</h3>
+            <div>
+               <p>Modern Real Estate</p>
+               <span>Featured</span>
+            </div>
+         </div>
+         <div class="thumb">
+            <p class="total-images"><i class="far fa-image"></i><span>7</span></p>
+            <p class="type"><span>Apartment</span><span>Sale</span></p>
+            <form action="" method="post" class="save">
+               <button type="submit" name="save" class="far fa-heart"></button>
+            </form>
+            <img src="images/house-img-4.webp" alt="Premium Apartment">
+         </div>
+         <h3 class="name">Premium Apartment</h3>
+         <p class="location"><i class="fas fa-map-marker-alt"></i><span>Andheri West, Mumbai</span></p>
+         <div class="flex">
+            <p><i class="fas fa-bed"></i><span>3</span></p>
+            <p><i class="fas fa-bath"></i><span>2</span></p>
+            <p><i class="fas fa-maximize"></i><span>1,800 sqft</span></p>
+         </div>
+         <div class="price">₹2.8 Crores</div>
+         <a href="view_property.html" class="btn">View Details</a>
+      </div>
+
+      <div class="box" data-location="Powai, Mumbai" data-type="house" data-bhk="6" data-price="185000000">
+         <div class="admin">
+            <h3>M</h3>
+            <div>
+               <p>Modern Real Estate</p>
+               <span>Featured</span>
+            </div>
+         </div>
+         <div class="thumb">
+            <p class="total-images"><i class="far fa-image"></i><span>6</span></p>
+            <p class="type"><span>House</span><span>Sale</span></p>
+            <form action="" method="post" class="save">
+               <button type="submit" name="save" class="far fa-heart"></button>
+            </form>
+            <img src="images/house-img-5.webp" alt="Luxury Villa">
+         </div>
+         <h3 class="name">Luxury Villa</h3>
+         <p class="location"><i class="fas fa-map-marker-alt"></i><span>Powai, Mumbai</span></p>
+         <div class="flex">
+            <p><i class="fas fa-bed"></i><span>6</span></p>
+            <p><i class="fas fa-bath"></i><span>4</span></p>
+            <p><i class="fas fa-maximize"></i><span>4,500 sqft</span></p>
+         </div>
+         <div class="price">₹18.5 Crores</div>
+         <a href="view_property.html" class="btn">View Details</a>
+      </div>
+
+      <div class="box" data-location="Vashi, Navi Mumbai" data-type="apartment" data-bhk="2" data-price="18000000">
+         <div class="admin">
+            <h3>M</h3>
+            <div>
+               <p>Modern Real Estate</p>
+               <span>Featured</span>
+            </div>
+         </div>
+         <div class="thumb">
+            <p class="total-images"><i class="far fa-image"></i><span>8</span></p>
+            <p class="type"><span>Apartment</span><span>Sale</span></p>
+            <form action="" method="post" class="save">
+               <button type="submit" name="save" class="far fa-heart"></button>
+            </form>
+            <img src="images/house-img-6.webp" alt="Modern Apartment">
+         </div>
+         <h3 class="name">Modern Apartment</h3>
+         <p class="location"><i class="fas fa-map-marker-alt"></i><span>Vashi, Navi Mumbai</span></p>
+         <div class="flex">
+            <p><i class="fas fa-bed"></i><span>2</span></p>
+            <p><i class="fas fa-bath"></i><span>2</span></p>
+            <p><i class="fas fa-maximize"></i><span>1,200 sqft</span></p>
+         </div>
+         <div class="price">₹1.8 Crores</div>
+         <a href="view_property.html" class="btn">View Details</a>
+      </div>
+   </div>
+
+   <div style="margin-top: 2rem; text-align:center;">
+      <a href="index.html" class="inline-btn">Back to Home</a>
+   </div>
+</section>
+
+<!-- listings section ends -->
+
+<!-- footer section starts  -->
+
+<footer class="footer">
+   <section class="flex">
+      <div class="box">
+         <a href="tel:1234567890"><i class="fas fa-phone"></i><span>+91 (22) 1234-5678</span></a>
+         <a href="tel:1112223333"><i class="fas fa-phone"></i><span>+91 (22) 1112-2233</span></a>
+         <a href="mailto:info@modernrealestate.com"><i class="fas fa-envelope"></i><span>info@modernrealestate.com</span></a>
+         <a href="#"><i class="fas fa-map-marker-alt"></i><span>Bandra West, Mumbai - 400050</span></a>
+      </div>
+
+      <div class="box">
+         <a href="index.html"><span>Home</span></a>
+         <a href="about.html"><span>About</span></a>
+         <a href="contact.html"><span>Contact</span></a>
+         <a href="listings.html"><span>Properties</span></a>
+         <a href="#"><span>Services</span></a>
+      </div>
+
+      <div class="box">
+         <a href="https://www.facebook.com/" target="_blank"><span>Facebook</span><i class="fab fa-facebook-f"></i></a>
+         <a href="#"><span>Instagram</span><i class="fab fa-instagram"></i></a>
+         <a href="#"><span>LinkedIn</span><i class="fab fa-linkedin"></i></a>
+         <a href="#"><span>YouTube</span><i class="fab fa-youtube"></i></a>
+      </div>
+   </section>
+
+   <div class="credit">&copy; 2024 <span>Modern Real Estate</span> | All Rights Reserved | Demo Website</div>
+</footer>
+
+<!-- footer section ends -->
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+<script>
+// Property filtering functionality
+function filterProperties() {
+    const locationFilter = document.getElementById('location-filter').value.toLowerCase();
+    const typeFilter = document.getElementById('type-filter').value.toLowerCase();
+    const bhkFilter = document.getElementById('bhk-filter').value;
+    const priceFilter = document.getElementById('price-filter').value;
+    
+    const propertyBoxes = document.querySelectorAll('.box-container .box');
+    let visibleCount = 0;
+    
+    propertyBoxes.forEach(box => {
+        const location = box.getAttribute('data-location').toLowerCase();
+        const type = box.getAttribute('data-type').toLowerCase();
+        const bhk = box.getAttribute('data-bhk');
+        const price = parseInt(box.getAttribute('data-price'));
+        
+        let showProperty = true;
+        
+        // Location filter
+        if (locationFilter && !location.includes(locationFilter)) {
+            showProperty = false;
+        }
+        
+        // Type filter
+        if (typeFilter && type !== typeFilter) {
+            showProperty = false;
+        }
+        
+        // BHK filter
+        if (bhkFilter && bhk !== bhkFilter) {
+            showProperty = false;
+        }
+        
+        // Price filter
+        if (priceFilter) {
+            const [minPrice, maxPrice] = priceFilter.split('-').map(p => p === '+' ? Infinity : parseInt(p));
+            if (price < minPrice || (maxPrice !== Infinity && price > maxPrice)) {
+                showProperty = false;
+            }
+        }
+        
+        // Show/hide property
+        if (showProperty) {
+            box.style.display = 'block';
+            visibleCount++;
+            // Add fade-in effect
+            box.style.opacity = '0';
+            setTimeout(() => {
+                box.style.opacity = '1';
+            }, 100);
+        } else {
+            box.style.display = 'none';
+        }
+    });
+    
+    // Show results count
+    showResultsCount(visibleCount, propertyBoxes.length);
+}
+
+function clearFilters() {
+    // Reset all filter inputs
+    document.getElementById('location-filter').value = '';
+    document.getElementById('type-filter').value = '';
+    document.getElementById('bhk-filter').value = '';
+    document.getElementById('price-filter').value = '';
+    
+    // Show all properties
+    const propertyBoxes = document.querySelectorAll('.box-container .box');
+    propertyBoxes.forEach(box => {
+        box.style.display = 'block';
+        box.style.opacity = '1';
+    });
+    
+    // Hide results count
+    hideResultsCount();
+}
+
+function showResultsCount(visible, total) {
+    let resultsDiv = document.getElementById('results-count');
+    if (!resultsDiv) {
+        resultsDiv = document.createElement('div');
+        resultsDiv.id = 'results-count';
+        resultsDiv.style.cssText = 'text-align: center; margin: 1rem 0; padding: 1rem; background: #f8f9fa; border-radius: 8px; font-weight: 500;';
+        document.querySelector('.filters').appendChild(resultsDiv);
+    }
+    
+    if (visible === total) {
+        resultsDiv.textContent = `Showing all ${total} properties`;
+    } else {
+        resultsDiv.textContent = `Showing ${visible} of ${total} properties`;
+    }
+}
+
+function hideResultsCount() {
+    const resultsDiv = document.getElementById('results-count');
+    if (resultsDiv) {
+        resultsDiv.remove();
+    }
+}
+
+// Add real-time filtering for location (optional)
+document.addEventListener('DOMContentLoaded', function() {
+    const locationFilter = document.getElementById('location-filter');
+    if (locationFilter) {
+        locationFilter.addEventListener('input', function() {
+            if (this.value.length >= 2) {
+                filterProperties();
+            } else if (this.value.length === 0) {
+                clearFilters();
+            }
+        });
+    }
+    
+    // Add filter change listeners
+    const typeFilter = document.getElementById('type-filter');
+    const bhkFilter = document.getElementById('bhk-filter');
+    const priceFilter = document.getElementById('price-filter');
+    
+    [typeFilter, bhkFilter, priceFilter].forEach(filter => {
+        if (filter) {
+            filter.addEventListener('change', filterProperties);
+        }
+    });
+});
+</script>
+
+</body>
+</html>

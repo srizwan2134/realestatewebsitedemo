@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Contact Us - Modern Real Estate</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+   
+<!-- header section starts  -->
+
+<header class="header">
+
+   <nav class="navbar nav-1">
+      <section class="flex">
+         <a href="index.html" class="logo"><i class="fas fa-home"></i>Modern Real Estate</a>
+
+         <ul>
+            <li><a href="tel:+1234567890" class="contact-btn"><i class="fas fa-phone"></i>Call Now</a></li>
+         </ul>
+      </section>
+   </nav>
+
+   <nav class="navbar nav-2">
+      <section class="flex">
+         <div id="menu-btn" class="fas fa-bars"></div>
+
+         <div class="menu">
+            <ul>
+               <li><a href="listings.html">All Properties</a></li>
+               <li><a href="about.html">About Us</a></li>
+               <li><a href="contact.html">Contact</a></li>
+            </ul>
+         </div>
+
+         <ul>
+            <li><a href="#" class="search-btn"><i class="fas fa-search"></i>Search</a></li>
+            <li><a href="contact.html" class="contact-nav">Get Quote</a></li>
+         </ul>
+      </section>
+   </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact">
+
+   <div class="row">
+      <div class="image">
+         <img src="images/contact-img.svg" alt="Contact Us">
+      </div>
+      <form action="" method="post" id="contact-form">
+         <h3>Get In Touch</h3>
+         <p class="form-subtitle">We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+         
+         <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input type="text" name="name" id="name" required maxlength="50" placeholder="Enter your full name" class="box">
+            <span class="error-message" id="name-error"></span>
+         </div>
+         
+         <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" name="email" id="email" required maxlength="50" placeholder="Enter your email address" class="box">
+            <span class="error-message" id="email-error"></span>
+         </div>
+         
+         <div class="form-group">
+            <label for="phone">Phone Number *</label>
+            <input type="tel" name="phone" id="phone" required maxlength="15" placeholder="Enter your phone number" class="box">
+            <span class="error-message" id="phone-error"></span>
+         </div>
+         
+         <div class="form-group">
+            <label for="subject">Subject *</label>
+            <select name="subject" id="subject" required class="box">
+               <option value="">Select a subject</option>
+               <option value="general">General Inquiry</option>
+               <option value="property">Property Information</option>
+               <option value="viewing">Schedule Viewing</option>
+               <option value="support">Technical Support</option>
+               <option value="other">Other</option>
+            </select>
+            <span class="error-message" id="subject-error"></span>
+         </div>
+         
+         <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea name="message" id="message" placeholder="Tell us how we can help you..." required maxlength="1000" rows="6" class="box"></textarea>
+            <span class="error-message" id="message-error"></span>
+            <div class="char-count">
+               <span id="char-count">0</span> / 1000 characters
+            </div>
+         </div>
+         
+         <div class="form-group">
+            <label class="checkbox-label">
+               <input type="checkbox" name="newsletter" id="newsletter">
+               <span class="checkmark"></span>
+               Subscribe to our newsletter for property updates
+            </label>
+         </div>
+         
+         <button type="submit" class="btn" id="submit-btn">
+            <span class="btn-text">Send Message</span>
+            <span class="btn-loading" style="display: none;">
+               <i class="fas fa-spinner fa-spin"></i> Sending...
+            </span>
+         </button>
+         
+         <div class="form-success" id="form-success" style="display: none;">
+            <i class="fas fa-check-circle"></i>
+            <h4>Message Sent Successfully!</h4>
+            <p>Thank you for contacting us. We'll get back to you within 24 hours.</p>
+         </div>
+      </form>
+   </div>
+
+</section>
+
+<!-- contact section ends -->
+
+<!-- faq section starts  -->
+
+<section class="faq" id="faq">
+
+   <h1 class="heading">Frequently Asked Questions</h1>
+   <p class="section-subtitle">Find answers to common questions about our real estate services</p>
+
+   <div class="box-container">
+
+      <div class="box">
+         <div class="faq-header" onclick="toggleFAQ(this)">
+            <h3>How do I schedule a property viewing?</h3>
+            <i class="fas fa-chevron-down"></i>
+         </div>
+         <div class="faq-content">
+            <p>You can schedule a property viewing by contacting us through the contact form above, calling us directly, or using our online booking system. We'll arrange a convenient time for you to visit the property.</p>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="faq-header" onclick="toggleFAQ(this)">
+            <h3>What documents do I need to rent a property?</h3>
+            <i class="fas fa-chevron-down"></i>
+         </div>
+         <div class="faq-content">
+            <p>Typically, you'll need proof of income, bank statements, references from previous landlords, and a valid ID. We'll provide you with a complete list based on your specific situation.</p>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="faq-header" onclick="toggleFAQ(this)">
+            <h3>How long does the buying process take?</h3>
+            <i class="fas fa-chevron-down"></i>
+         </div>
+         <div class="faq-content">
+            <p>The buying process usually takes 4-8 weeks from offer acceptance to completion, depending on various factors like mortgage approval, legal work, and property chain.</p>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="faq-header" onclick="toggleFAQ(this)">
+            <h3>Do you offer mortgage advice?</h3>
+            <i class="fas fa-chevron-down"></i>
+         </div>
+         <div class="faq-content">
+            <p>Yes, we work with qualified mortgage advisors who can help you find the best mortgage deals and guide you through the application process.</p>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="faq-header" onclick="toggleFAQ(this)">
+            <h3>What areas do you cover?</h3>
+            <i class="fas fa-chevron-down"></i>
+         </div>
+         <div class="faq-content">
+            <p>We primarily cover Mumbai and surrounding areas including Navi Mumbai, Thane, and nearby suburbs. Contact us to confirm coverage for your specific location.</p>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="faq-header" onclick="toggleFAQ(this)">
+            <h3>How can I list my property for sale?</h3>
+            <i class="fas fa-chevron-down"></i>
+         </div>
+         <div class="faq-content">
+            <p>To list your property, simply contact us through the form above or call us directly. We'll arrange a property valuation and discuss our marketing strategies to get you the best price.</p>
+         </div>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- faq section ends -->
+
+<!-- footer section starts  -->
+
+<footer class="footer">
+
+   <section class="flex">
+
+      <div class="box">
+         <a href="tel:1234567890"><i class="fas fa-phone"></i><span>+91 (22) 1234-5678</span></a>
+         <a href="tel:1112223333"><i class="fas fa-phone"></i><span>+91 (22) 1112-2233</span></a>
+         <a href="mailto:info@modernrealestate.com"><i class="fas fa-envelope"></i><span>info@modernrealestate.com</span></a>
+         <a href="#"><i class="fas fa-map-marker-alt"></i><span>Bandra West, Mumbai - 400050</span></a>
+      </div>
+
+      <div class="box">
+         <a href="index.html"><span>Home</span></a>
+         <a href="about.html"><span>About</span></a>
+         <a href="contact.html"><span>Contact</span></a>
+         <a href="listings.html"><span>Properties</span></a>
+         <a href="#"><span>Services</span></a>
+      </div>
+
+      <div class="box">
+         <a href="https://www.facebook.com/" target="_blank"><span>Facebook</span><i class="fab fa-facebook-f"></i></a>
+         <a href="#"><span>Instagram</span><i class="fab fa-instagram"></i></a>
+         <a href="#"><span>LinkedIn</span><i class="fab fa-linkedin"></i></a>
+         <a href="#"><span>YouTube</span><i class="fab fa-youtube"></i></a>
+      </div>
+
+   </section>
+
+   <div class="credit">&copy; 2024 <span>Modern Real Estate</span> | All Rights Reserved | Demo Website</div>
+
+</footer>
+
+<!-- footer section ends -->
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+<script>
+// Enhanced Contact Form Functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('contact-form');
+    const submitBtn = document.getElementById('submit-btn');
+    const btnText = document.querySelector('.btn-text');
+    const btnLoading = document.querySelector('.btn-loading');
+    const formSuccess = document.getElementById('form-success');
+    const messageTextarea = document.getElementById('message');
+    const charCount = document.getElementById('char-count');
+    
+    // Character counter for message
+    if (messageTextarea && charCount) {
+        messageTextarea.addEventListener('input', function() {
+            const remaining = this.value.length;
+            charCount.textContent = remaining;
+            
+            if (remaining > 800) {
+                charCount.style.color = '#ff6b6b';
+            } else if (remaining > 600) {
+                charCount.style.color = '#ffa726';
+            } else {
+                charCount.style.color = '#666';
+            }
+        });
+    }
+    
+    // Form validation and submission
+    if (form) {
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            if (validateForm()) {
+                submitForm();
+            }
+        });
+    }
+    
+    // Real-time validation
+    const inputs = form.querySelectorAll('input, select, textarea');
+    inputs.forEach(input => {
+        input.addEventListener('blur', function() {
+            validateField(this);
+        });
+        
+        input.addEventListener('input', function() {
+            clearFieldError(this);
+        });
+    });
+    
+    function validateForm() {
+        let isValid = true;
+        
+        // Validate each field
+        inputs.forEach(input => {
+            if (!validateField(input)) {
+                isValid = false;
+            }
+        });
+        
+        return isValid;
+    }
+    
+    function validateField(field) {
+        const value = field.value.trim();
+        const fieldName = field.name;
+        const errorElement = document.getElementById(fieldName + '-error');
+        
+        clearFieldError(field);
+        
+        // Required field validation
+        if (field.hasAttribute('required') && !value) {
+            showFieldError(field, 'This field is required');
+            return false;
+        }
+        
+        // Specific validations
+        switch (fieldName) {
+            case 'name':
+                if (value.length < 2) {
+                    showFieldError(field, 'Name must be at least 2 characters');
+                    return false;
+                }
+                if (!/^[a-zA-Z\s]+$/.test(value)) {
+                    showFieldError(field, 'Name can only contain letters and spaces');
+                    return false;
+                }
+                break;
+                
+            case 'email':
+                if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) {
+                    showFieldError(field, 'Please enter a valid email address');
+                    return false;
+                }
+                break;
+                
+            case 'phone':
+                if (!/^[\+]?[0-9\s\-\(\)]{10,15}$/.test(value)) {
+                    showFieldError(field, 'Please enter a valid phone number');
+                    return false;
+                }
+                break;
+                
+            case 'subject':
+                if (value === '') {
+                    showFieldError(field, 'Please select a subject');
+                    return false;
+                }
+                break;
+                
+            case 'message':
+                if (value.length < 10) {
+                    showFieldError(field, 'Message must be at least 10 characters');
+                    return false;
+                }
+                break;
+        }
+        
+        return true;
+    }
+    
+    function showFieldError(field, message) {
+        const errorElement = document.getElementById(field.name + '-error');
+        if (errorElement) {
+            errorElement.textContent = message;
+            errorElement.style.display = 'block';
+        }
+        field.classList.add('error');
+    }
+    
+    function clearFieldError(field) {
+        const errorElement = document.getElementById(field.name + '-error');
+        if (errorElement) {
+            errorElement.textContent = '';
+            errorElement.style.display = 'none';
+        }
+        field.classList.remove('error');
+    }
+    
+    function submitForm() {
+        // Show loading state
+        btnText.style.display = 'none';
+        btnLoading.style.display = 'inline-block';
+        submitBtn.disabled = true;
+        
+        // Simulate form submission (replace with actual submission logic)
+        setTimeout(() => {
+            // Hide form and show success message
+            form.style.display = 'none';
+            formSuccess.style.display = 'block';
+            
+            // Reset form
+            form.reset();
+            charCount.textContent = '0';
+            
+            // Reset button state
+            btnText.style.display = 'inline-block';
+            btnLoading.style.display = 'none';
+            submitBtn.disabled = false;
+            
+            // Hide success message after 5 seconds
+            setTimeout(() => {
+                formSuccess.style.display = 'none';
+                form.style.display = 'block';
+            }, 5000);
+        }, 2000);
+    }
+});
+
+// FAQ Toggle Functionality
+function toggleFAQ(element) {
+    const faqBox = element.parentElement;
+    const content = faqBox.querySelector('.faq-content');
+    const icon = element.querySelector('i');
+    
+    // Close all other FAQ items
+    document.querySelectorAll('.faq .box').forEach(box => {
+        if (box !== faqBox) {
+            box.classList.remove('active');
+            const otherContent = box.querySelector('.faq-content');
+            const otherIcon = box.querySelector('.faq-header i');
+            if (otherContent) otherContent.style.maxHeight = '0px';
+            if (otherIcon) otherIcon.style.transform = 'rotate(0deg)';
+        }
+    });
+    
+    // Toggle current FAQ item
+    faqBox.classList.toggle('active');
+    
+    if (faqBox.classList.contains('active')) {
+        content.style.maxHeight = content.scrollHeight + 'px';
+        icon.style.transform = 'rotate(180deg)';
+    } else {
+        content.style.maxHeight = '0px';
+        icon.style.transform = 'rotate(0deg)';
+    }
+}
+
+// Initialize FAQ functionality
+document.addEventListener('DOMContentLoaded', function() {
+    // Set first FAQ as active by default
+    const firstFAQ = document.querySelector('.faq .box');
+    if (firstFAQ) {
+        firstFAQ.classList.add('active');
+        const content = firstFAQ.querySelector('.faq-content');
+        const icon = firstFAQ.querySelector('.faq-header i');
+        if (content) content.style.maxHeight = content.scrollHeight + 'px';
+        if (icon) icon.style.transform = 'rotate(180deg)';
+    }
+});
+</script>
+
+</body>
+</html>

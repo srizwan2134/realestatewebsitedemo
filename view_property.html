@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>View Property - Modern Real Estate</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+   
+<!-- header section starts  -->
+
+<header class="header">
+
+   <nav class="navbar nav-1">
+      <section class="flex">
+         <a href="index.html" class="logo"><i class="fas fa-home"></i>Modern Real Estate</a>
+
+         <ul>
+            <li><a href="tel:+1234567890" class="contact-btn"><i class="fas fa-phone"></i>Call Now</a></li>
+         </ul>
+      </section>
+   </nav>
+
+   <nav class="navbar nav-2">
+      <section class="flex">
+         <div id="menu-btn" class="fas fa-bars"></div>
+
+         <div class="menu">
+            <ul>
+               <li><a href="listings.html">All Properties</a></li>
+               <li><a href="about.html">About Us</a></li>
+               <li><a href="contact.html">Contact</a></li>
+            </ul>
+         </div>
+
+         <ul>
+            <li><a href="#" class="search-btn"><i class="fas fa-search"></i>Search</a></li>
+            <li><a href="contact.html" class="contact-nav">Get Quote</a></li>
+         </ul>
+      </section>
+   </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- view property section starts  -->
+
+<section class="view-property">
+
+   <div class="details">
+      <div class="thumb">
+         <div class="big-image">
+            <img src="images/house-img-1.webp" alt="" id="main-image">
+         </div>
+         <div class="small-images">
+            <img src="images/house-img-1.webp" alt="" class="small-img" onclick="changeMainImage(this.src, this)">
+            <img src="images/hall-img-1.webp" alt="" class="small-img" onclick="changeMainImage(this.src, this)">
+            <img src="images/kitchen-img-1.webp" alt="" class="small-img" onclick="changeMainImage(this.src, this)">
+            <img src="images/bathroom-img-1.webp" alt="" class="small-img" onclick="changeMainImage(this.src, this)">
+         </div>
+      </div>
+      <h3 class="name">modern flats and appartments</h3>
+      <p class="location"><i class="fas fa-map-marker-alt"></i><span>andheri, mumbai, india - 400104</span></p>
+      <div class="info">
+         <p><i class="fas fa-tag"></i><span>15 lac</span></p>
+         <p><i class="fas fa-user"></i><span>john deo (owner)</span></p>
+         <p><i class="fas fa-phone"></i><a href="tel:1234567890">1234567890</a></p>
+         <p><i class="fas fa-building"></i><span>flat</span></p>
+         <p><i class="fas fa-house"></i><span>sale</span></p>
+         <p><i class="fas fa-calendar"></i><span>10-11-2022</span></p>
+      </div>
+      <h3 class="title">details</h3>
+      <div class="flex">
+         <div class="box">
+            <p><i>rooms :</i><span>2 BHK</span></p>
+            <p><i>deposit amount :</i><span>0</span></p>
+            <p><i>status :</i><span>ready to move</span></p>
+            <p><i>bedroom :</i><span>3</span></p>
+            <p><i>bathroom :</i><span>2</span></p>
+            <p><i>balcony :</i><span>1</span></p>
+         </div>
+         <div class="box">
+            <p><i>carpet area :</i><span>750sqft</span></p>
+            <p><i>age :</i><span>3 years</span></p>
+            <p><i>room floor :</i><span>3</span></p>
+            <p><i>total floors :</i><span>22</span></p>
+            <p><i>furnished :</i><span>semi-furnished</span></p>
+            <p><i>loan :</i><span>available</span></p>
+         </div>
+      </div>
+      <h3 class="title">amenities</h3>
+      <div class="flex">
+         <div class="box">
+            <p><i class="fas fa-check"></i><span>lifts</span></p>
+            <p><i class="fas fa-check"></i><span>security guards</span></p>
+            <p><i class="fas fa-times"></i><span>play ground</span></p>
+            <p><i class="fas fa-check"></i><span>gardens</span></p>
+            <p><i class="fas fa-check"></i><span>water supply</span></p>
+            <p><i class="fas fa-check"></i><span>power backup</span></p>
+         </div>
+         <div class="box">
+            <p><i class="fas fa-check"></i><span>parking area</span></p>
+            <p><i class="fas fa-times"></i><span>gym</span></p>
+            <p><i class="fas fa-check"></i><span>shopping mall</span></p>
+            <p><i class="fas fa-check"></i><span>hospital</span></p>
+            <p><i class="fas fa-check"></i><span>schools</span></p>
+            <p><i class="fas fa-check"></i><span>market area</span></p>
+         </div>
+      </div>
+      <h3 class="title">description</h3>
+      <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum cupiditate aliquid ipsum recusandae maxime nisi, velit eaque, libero, exercitationem culpa accusamus. Neque dolor quaerat modi saepe facere dignissimos temporibus molestias.</p>
+      <form action="" method="post">
+         <input type="submit" value="save property" name="save" class="inline-btn">
+      </form>
+   </div>
+
+</section>
+
+<!-- view property section ends -->
+
+<!-- footer section starts  -->
+
+<footer class="footer">
+
+   <section class="flex">
+
+      <div class="box">
+         <a href="tel:1234567890"><i class="fas fa-phone"></i><span>123456789</span></a>
+         <a href="tel:1112223333"><i class="fas fa-phone"></i><span>1112223333</span></a>
+         <a href="mailto:s.rizwan2134@gmail.com"><i class="fas fa-envelope"></i><span>s.rizwan2134@gmail.com</span></a>
+         <a href="#"><i class="fas fa-map-marker-alt"></i><span>mumbai, india - 400104</span></a>
+      </div>
+
+      <div class="box">
+         <a href="index.html"><span>home</span></a>
+         <a href="about.html"><span>about</span></a>
+         <a href="contact.html"><span>contact</span></a>
+         <a href="listings.html"><span>all listings</span></a>
+         <a href="#"><span>saved properties</span></a>
+      </div>
+
+      <div class="box">
+         <a href="#"><span>facebook</span><i class="fab fa-facebook-f"></i></a>
+         <a href="#"><span>twitter</span><i class="fab fa-twitter"></i></a>
+         <a href="#"><span>linkedin</span><i class="fab fa-linkedin"></i></a>
+         <a href="#"><span>instagram</span><i class="fab fa-instagram"></i></a>
+
+      </div>
+
+   </section>
+
+   <div class="credit">&copy; copyright @ 2022 by <span>Rizwan</span> | all rights reserved!</div>
+
+</footer>
+
+<!-- footer section ends -->
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+<script>
+// Function to change main image when small images are clicked
+function changeMainImage(imageSrc, clickedImage) {
+    const mainImage = document.getElementById('main-image');
+    if (mainImage) {
+        // Remove active class from all small images
+        document.querySelectorAll('.small-img').forEach(img => {
+            img.classList.remove('active');
+        });
+        
+        // Add active class to clicked image
+        if (clickedImage) {
+            clickedImage.classList.add('active');
+        }
+        
+        // Change main image with fade effect
+        mainImage.style.opacity = '0';
+        setTimeout(() => {
+            mainImage.src = imageSrc;
+            mainImage.style.opacity = '1';
+        }, 150);
+    }
+}
+
+// Add hover effect and click functionality to small images
+document.addEventListener('DOMContentLoaded', function() {
+    const smallImages = document.querySelectorAll('.small-img');
+    const mainImage = document.getElementById('main-image');
+    
+    // Set first image as active by default
+    if (smallImages.length > 0) {
+        smallImages[0].classList.add('active');
+    }
+    
+    smallImages.forEach(img => {
+        img.style.cursor = 'pointer';
+        
+        // Add click event with active state
+        img.addEventListener('click', function() {
+            changeMainImage(this.src, this);
+        });
+        
+        // Add keyboard accessibility
+        img.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                changeMainImage(this.src, this);
+            }
+        });
+        
+        // Make images focusable
+        img.setAttribute('tabindex', '0');
+        img.setAttribute('role', 'button');
+        img.setAttribute('aria-label', 'View ' + img.alt);
+    });
+    
+    // Add smooth loading for main image
+    if (mainImage) {
+        mainImage.addEventListener('load', function() {
+            this.style.opacity = '1';
+        });
+    }
+});
+</script>
+
+</body>
+</html>
