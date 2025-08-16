@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Modern Real Estate - Find Your Perfect Home</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+   
+<!-- header section starts  -->
+
+<header class="header">
+
+   <nav class="navbar nav-1">
+      <section class="flex">
+         <a href="index.html" class="logo"><i class="fas fa-home"></i>Modern Real Estate</a>
+
+         <ul>
+            <li><a href="tel:+1234567890" class="contact-btn"><i class="fas fa-phone"></i>Call Now</a></li>
+         </ul>
+      </section>
+   </nav>
+
+   <nav class="navbar nav-2">
+      <section class="flex">
+         <div id="menu-btn" class="fas fa-bars"></div>
+
+         <div class="menu">
+            <ul>
+               <li><a href="listings.html">All Properties</a></li>
+               <li><a href="about.html">About Us</a></li>
+               <li><a href="contact.html">Contact</a></li>
+            </ul>
+         </div>
+
+         <ul>
+            <li><a href="#" class="search-btn"><i class="fas fa-search"></i>Search</a></li>
+            <li><a href="contact.html" class="contact-nav">Get Quote</a></li>
+         </ul>
+      </section>
+   </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- hero section starts  -->
+
+<div class="home">
+   <section class="center">
+      <div class="hero-content">
+         <h1>Find Your Perfect Home</h1>
+         <p class="hero-subtitle">Professional real estate services for buyers and sellers</p>
+         
+         <form action="search.html" method="post" class="search-form">
+            <h3>Search Properties</h3>
+            <div class="box">
+               <p>Location <span>*</span></p>
+               <input type="text" name="location" required maxlength="50" placeholder="Enter city or neighborhood" class="input">
+            </div>
+            <div class="flex">
+               <div class="box">
+                  <p>Property Type <span>*</span></p>
+                  <select name="type" class="input" required>
+                     <option value="">Select Type</option>
+                     <option value="house">House</option>
+                     <option value="flat">Apartment</option>
+                     <option value="shop">Commercial</option>
+                  </select>
+               </div>
+               <div class="box">
+                  <p>Bedrooms <span>*</span></p>
+                  <select name="bhk" class="input" required>
+                     <option value="">Any</option>
+                     <option value="1">1 Bedroom</option>
+                     <option value="2">2 Bedrooms</option>
+                     <option value="3">3 Bedrooms</option>
+                     <option value="4">4+ Bedrooms</option>
+                  </select>
+               </div>
+               <div class="box">
+                  <p>Price Range <span>*</span></p>
+                  <select name="price_range" class="input" required>
+                     <option value="">Select Range</option>
+                     <option value="5000000-10000000">₹50 Lakhs - ₹1 Crore</option>
+                     <option value="10000000-20000000">₹1 Crore - ₹2 Crores</option>
+                     <option value="20000000-50000000">₹2 Crores - ₹5 Crores</option>
+                     <option value="50000000-100000000">₹5 Crores - ₹10 Crores</option>
+                     <option value="100000000+">₹10 Crores+</option>
+                  </select>
+               </div>
+            </div>
+            <input type="submit" value="Search Properties" name="search" class="btn">
+         </form>
+      </div>
+   </section>
+</div>
+
+<!-- hero section ends -->
+
+<!-- features section starts  -->
+
+<section class="features">
+   <h1 class="heading">Why Choose Us</h1>
+   
+   <div class="box-container">
+      <div class="box">
+         <i class="fas fa-shield-alt"></i>
+         <h3>Trusted & Reliable</h3>
+         <p>15+ years of experience in real estate with hundreds of satisfied clients</p>
+      </div>
+      
+      <div class="box">
+         <i class="fas fa-map-marked-alt"></i>
+         <h3>Local Expertise</h3>
+         <p>Deep knowledge of local markets and neighborhoods in your area</p>
+      </div>
+      
+      <div class="box">
+         <i class="fas fa-handshake"></i>
+         <h3>Personal Service</h3>
+         <p>Dedicated real estate agent to guide you through every step</p>
+      </div>
+      
+      <div class="box">
+         <i class="fas fa-clock"></i>
+         <h3>Always Available</h3>
+         <p>Flexible scheduling and quick response times for all your needs</p>
+      </div>
+   </div>
+</section>
+
+<!-- features section ends -->
+
+<!-- listings section starts  -->
+
+<section class="listings">
+   <h1 class="heading">Featured Properties</h1>
+
+   <div class="box-container">
+      <div class="box">
+         <div class="admin">
+            <h3>M</h3>
+            <div>
+               <p>Modern Real Estate</p>
+               <span>Featured</span>
+            </div>
+         </div>
+         <div class="thumb">
+            <p class="total-images"><i class="far fa-image"></i><span>6</span></p>
+            <p class="type"><span>House</span><span>Sale</span></p>
+            <form action="" method="post" class="save">
+               <button type="submit" name="save" class="far fa-heart"></button>
+            </form>
+            <img src="images/house-img-1.webp" alt="Modern Family Home">
+         </div>
+         <h3 class="name">Modern Family Home</h3>
+         <p class="location"><i class="fas fa-map-marker-alt"></i><span>Bandra West, Mumbai</span></p>
+         <div class="flex">
+            <p><i class="fas fa-bed"></i><span>4</span></p>
+            <p><i class="fas fa-bath"></i><span>3</span></p>
+            <p><i class="fas fa-maximize"></i><span>2,200 sqft</span></p>
+         </div>
+         <div class="price">₹8.5 Crores</div>
+         <a href="view_property.html" class="btn">View Details</a>
+      </div>
+
+      <div class="box">
+         <div class="admin">
+            <h3>M</h3>
+            <div>
+               <p>Modern Real Estate</p>
+               <span>Featured</span>
+            </div>
+         </div>
+         <div class="thumb">
+            <p class="total-images"><i class="far fa-image"></i><span>8</span></p>
+            <p class="type"><span>Apartment</span><span>Sale</span></p>
+            <form action="" method="post" class="save">
+               <button type="submit" name="save" class="far fa-heart"></button>
+            </form>
+            <img src="images/house-img-2.webp" alt="Cozy Apartment">
+         </div>
+         <h3 class="name">Luxury Apartment</h3>
+         <p class="location"><i class="fas fa-map-marker-alt"></i><span>Worli, Mumbai</span></p>
+         <div class="flex">
+            <p><i class="fas fa-bed"></i><span>2</span></p>
+            <p><i class="fas fa-bath"></i><span>2</span></p>
+            <p><i class="fas fa-maximize"></i><span>1,100 sqft</span></p>
+         </div>
+         <div class="price">₹3.2 Crores</div>
+         <a href="view_property.html" class="btn">View Details</a>
+      </div>
+
+      <div class="box">
+         <div class="admin">
+            <h3>M</h3>
+            <div>
+               <p>Modern Real Estate</p>
+               <span>Featured</span>
+            </div>
+         </div>
+         <div class="thumb">
+            <p class="total-images"><i class="far fa-image"></i><span>5</span></p>
+            <p class="type"><span>House</span><span>Sale</span></p>
+            <form action="" method="post" class="save">
+               <button type="submit" name="save" class="far fa-heart"></button>
+            </form>
+            <img src="images/house-img-3.jpg" alt="Family Home">
+         </div>
+         <h3 class="name">Spacious Family Home</h3>
+         <p class="location"><i class="fas fa-map-marker-alt"></i><span>Juhu, Mumbai</span></p>
+         <div class="flex">
+            <p><i class="fas fa-bed"></i><span>5</span></p>
+            <p><i class="fas fa-bath"></i><span>3</span></p>
+            <p><i class="fas fa-maximize"></i><span>3,200 sqft</span></p>
+         </div>
+         <div class="price">₹12.5 Crores</div>
+         <a href="view_property.html" class="btn">View Details</a>
+      </div>
+   </div>
+
+   <div style="margin-top: 2rem; text-align:center;">
+      <a href="listings.html" class="inline-btn">View All Properties</a>
+   </div>
+</section>
+
+<!-- listings section ends -->
+
+<!-- stats section starts  -->
+
+<section class="stats">
+   <div class="stats-container">
+      <div class="stat-item">
+         <i class="fas fa-home"></i>
+         <h3>200+</h3>
+         <p>Properties Sold</p>
+      </div>
+      <div class="stat-item">
+         <i class="fas fa-users"></i>
+         <h3>500+</h3>
+         <p>Happy Clients</p>
+      </div>
+      <div class="stat-item">
+         <i class="fas fa-award"></i>
+         <h3>15+</h3>
+         <p>Years Experience</p>
+      </div>
+      <div class="stat-item">
+         <i class="fas fa-star"></i>
+         <h3>4.8</h3>
+         <p>Client Rating</p>
+      </div>
+   </div>
+</section>
+
+<!-- stats section ends -->
+
+<!-- footer section starts  -->
+
+<footer class="footer">
+   <section class="flex">
+      <div class="box">
+         <a href="tel:1234567890"><i class="fas fa-phone"></i><span>+91 (22) 1234-5678</span></a>
+         <a href="tel:1112223333"><i class="fas fa-phone"></i><span>+91 (22) 1112-2233</span></a>
+         <a href="mailto:info@modernrealestate.com"><i class="fas fa-envelope"></i><span>info@modernrealestate.com</span></a>
+         <a href="#"><i class="fas fa-map-marker-alt"></i><span>Bandra West, Mumbai - 400050</span></a>
+      </div>
+
+      <div class="box">
+         <a href="index.html"><span>Home</span></a>
+         <a href="about.html"><span>About</span></a>
+         <a href="contact.html"><span>Contact</span></a>
+         <a href="listings.html"><span>Properties</span></a>
+         <a href="#"><span>Services</span></a>
+      </div>
+
+      <div class="box">
+         <a href="https://www.facebook.com/" target="_blank"><span>Facebook</span><i class="fab fa-facebook-f"></i></a>
+         <a href="#"><span>Instagram</span><i class="fab fa-instagram"></i></a>
+         <a href="#"><span>LinkedIn</span><i class="fab fa-linkedin"></i></a>
+         <a href="#"><span>YouTube</span><i class="fab fa-youtube"></i></a>
+      </div>
+   </section>
+
+   <div class="credit">&copy; 2024 <span>Modern Real Estate</span> | All Rights Reserved | Demo Website</div>
+</footer>
+
+<!-- footer section ends -->
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
